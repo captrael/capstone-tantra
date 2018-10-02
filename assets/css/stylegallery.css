@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.navbar {
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+.nav-link {
+	color: #fff;
+}
+
+
+.navbar-brand {
+	height: 65px;
+}
+
+.navbar-brand > img{
+	text-align: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-image: url(../images/main-bottom.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Goudy Bookletter 1911', serif;
+}
+
+
+h2, h3, h4,	{
+	 font-family: 'Cinzel', serif;
+	 font-weight: bold;
+}
+
+.overlaybg {
+	background: rgba(255,255,255,.15);
+}
+
+.overlay-about {
+	background: rgba(255,255,255,.5);
+	border-radius: 15px;
+	display: inline-block;
+	padding: 15px;
+}
+
+footer>a:hover {
+	text-decoration: none;
+}
+
+.container-main {
+	padding: 80px;
+}
+
+
+.gallery-img {
+	width: 800px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+
+.gallery-img>img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*Desktop view*/
+
+@media only screen and (min-width: 961px) {
+
+.navbar {
+	width: 80%;
+	left: 10%;
+	border-radius: 15px;
+
+}
+
+.navbar-nav {
+	margin-right: 100px;
+}
+
+
+}
+
+
+/*Tablet view*/
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+
+.head_txt > img {
+	max-height: 80%;
+	max-width: 80%;
+}
+
+.navbar {
+	margin: 0;	
+}
+
+.gallery-img {
+	width: 400px;
+}
+
+}
+
+/*Smartphone view*/
+
+@media only screen and (max-width: 400px) {
+
+.head_txt > img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.navbar {
+	margin: 0;	
+}
+
+.gallery-img {
+	width: 220px;
+}
+
+}

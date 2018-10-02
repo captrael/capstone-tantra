@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.navbar {
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+.nav-link {
+	color: #fff;
+}
+
+
+.navbar-brand {
+	height: 65px;
+}
+
+.navbar-brand > img{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-image: url(../images/main-bottom.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Goudy Bookletter 1911', serif;
+}
+
+h3, h4,	{
+	 font-family: 'Cinzel', serif;
+	 font-weight: bold;
+}
+
+
+.overlaybg {
+	background: rgba(255,255,255,.15);
+}
+
+.overlay-about {
+	background: rgba(255,255,255,.5);
+	border-radius: 15px;
+	display: inline-block;
+	padding: 5px;
+}
+
+
+.head_img {
+	padding: 95px 0px 30px 0;
+}
+
+.head_img > img {
+	max-height: 40%;
+	max-width: 40%;
+}
+
+.first_row > .video, .overlay-about {
+	margin: 50px, 0, 50px, 0;
+}
+
+.get {
+	font-weight: bold;
+}
+
+.get a:hover {
+	text-decoration: none;
+}
+
+.carouselwrap {
+	height: 370px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.carouselwrap >img {
+	height: 100%;
+	margin: auto;
+}
+
+.social {
+	text-align: center;
+	margin: 20px;
+}
+
+.social li {
+	list-style-type: none;
+	display: inline;
+}
+
+#github {
+	color: rgba(0,0,0,.9);
+}
+
+#facebook {
+	color: rgba(59,89,153,1);
+}
+
+#twitter {
+	color: rgba(85,172,238,1);
+}
+
+footer>a:hover {
+	text-decoration: none;
+}
+
+
+
+
+/*Desktop view*/
+
+@media only screen and (min-width: 961px) {
+
+.navbar {
+	width: 80%;
+	left: 10%;
+	border-radius: 15px;
+
+}
+
+.navbar-nav {
+	margin-right: 100px;
+}
+
+
+}
+
+
+/*Tablet view*/
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+
+.head_txt > img {
+	max-height: 80%;
+	max-width: 80%;
+}
+
+.navbar {
+	margin: 0;	
+}
+
+}
+
+/*Smartphone view*/
+
+@media only screen and (max-width: 400px) {
+
+.head_txt > img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.navbar {
+	margin: 0;	
+}
+
+}
